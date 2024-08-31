@@ -4,57 +4,186 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/2024-web-camp-week6-task/assets/main-a8a3db56.js"></script>
-    <link rel="stylesheet" href="/2024-web-camp-week6-task/assets/main-3a5cea6c.css">
+    <title>第六週 - 內容訂閱網站 | 首頁</title>
+    <script type="module" crossorigin src="/2024-web-camp-week6-task/assets/main-46a5eda3.js"></script>
+    <link rel="stylesheet" href="/2024-web-camp-week6-task/assets/main-f4ba8db1.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/2024-web-camp-week6-task/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-secondary-200" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
+    <header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg py-lg-8 pt-2 pb-1 border-bottom border-1 border-gray2-300">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 class="visually-hidden">logo</h2>
+          <div class="logo-image"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex position-relative" role="search">
+            <input class="search-input form-control py-4 px-6 rounded-pill" type="search" placeholder="搜尋文章" aria-label="Search">
+            <button class="btn position-absolute py-4 px-6 end-0 top-50 translate-middle-y" type="submit">
+              <i class="bi bi-search text-secondary-200"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-6">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item me-6">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item me-6">
+              <a class="nav-link" href="#">Dropdown</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-secondary-200 py-lg-5 px-lg-7" href="#" type="button">
+                登入 / 註冊
+              </button>
+            </li>
+          </ul>
+          
         </div>
       </div>
-    </div>
+    </nav>
+  </div>
+</header>    <main class="index">
 
-    <footer class="footer">我是 footer</footer>
+      <section class="index-banner py-lg-12 py-0">
+        <div class="container">
+          <div class="card text-light border-0">
+            <div class="image"></div>
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-lg-start align-items-center">
+              <h5 class="card-text mb-4">獻給新世代的生活風格誌</h5>
+              <h1 class="card-text mb-7">一起探索生活的無限可能</h1>
+              <div>
+                <button class="btn btn-secondary-200 py-lg-5 px-lg-7 text-light fs-lg-5 fs-6" href="#" type="button">
+                  馬上訂閱
+                  <i class="bi bi-arrow-right ms-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="index-theme py-lg-12 py-10">
+        <div class="container">
+          <h2 class="mb-7">熱門主題</h2>
+          <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-2 g-md-7">
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image1 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">城市漫遊者</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image2 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">秘境尋蹤人</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image3 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">品味設計家</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image4 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">美食探險記</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image5 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">美學建築誌</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image6 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">慢活生活行</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image7 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">工藝匠心賞</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card text-light border-0">
+                <div class="image image8 rounded-top-left-1 rounded-bottom-right-1"></div>
+                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                  <h6 class="card-text fs-lg-5 fw-lg-bolder fw-bold">時尚先鋒派</h6>
+                  <a class="stretched-link" href="#"></a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="index-article py-lg-12 py-10">
+
+      </section>
+
+      <section class="index-event py-lg-12 py-10 bg-primary-200">
+        
+      </section>
+
+      <section class="index-popular py-lg-12 py-10">
+        
+      </section>
+
+      <section class="index-life py-lg-12 py-10">
+        
+      </section>
+
+      <section class="index-action py-lg-12 py-10 bg-primary-200">
+        
+      </section>
+      <section class="index-contact py-lg-12 py-10">
+        
+      </section>
+
+    </main>
+    
+    
+    
+    
+
+    <footer class="footer">
+  <div class="container">
+    <p class="text-gray2-400 text-center border-top py-lg-7 py-6 border-1 border-gray2-300">©Vivre 2024 All right Reserved</p>
+  </div>
+</footer>
     
   </body>
 </html>
